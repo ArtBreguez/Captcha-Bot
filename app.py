@@ -29,16 +29,12 @@ class CaptchaModel:
         return resultado
 
 if __name__ == "__main__":
-    # Defina os paths e variáveis de ambiente
-    MODEL_PATH = os.getenv("MODEL_PATH", "/Users/alertrack/Documents/Captcha-Bot/")
-    IMAGE_PATH = os.getenv("IMAGE_PATH", "/Users/alertrack/Documents/Captcha-Bot/dataset/archive/1a1SZ.jpg")
+    MODEL_PATH = os.getenv("MODEL_PATH", "model")
+    IMAGE_PATH = os.getenv("IMAGE_PATH", "dataset/archive/1a1SZ.jpg")
     CHAR_POOL = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    # Crie uma instância da classe CaptchaModel
     modelo_captcha = CaptchaModel(MODEL_PATH, CHAR_POOL)
 
-    # Faça a previsão na imagem
     resultado = modelo_captcha.predict_image(IMAGE_PATH)
 
-    # Exiba o resultado
     print("Resultado:", resultado)
