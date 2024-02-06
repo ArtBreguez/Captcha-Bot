@@ -24,7 +24,7 @@ class CaptchaModel:
         image_data = base64.b64decode(base64_image)
         nparr = np.frombuffer(image_data, np.uint8)
         imagem = cv2.imdecode(nparr, cv2.IMREAD_GRAYSCALE)
-        imagem = imagem / 255.0  # Normalização
+        imagem = imagem / 255.0 
         imagem = cv2.resize(imagem, (150, 40))
         imagem = np.expand_dims(imagem, axis=-1)
 

@@ -1,0 +1,7 @@
+test.py
+dataset
+__pycache__
+.ipynb_checkpoints
+generate_model
+README.md
+Dockerfile
