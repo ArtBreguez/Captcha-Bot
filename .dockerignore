@@ -5,3 +5,4 @@ __pycache__
 generate_model
 README.md
 Dockerfile
+tests
