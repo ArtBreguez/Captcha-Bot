@@ -51,3 +51,7 @@ docker run -p 8080:8080 captcha-bot
 Isso irá rodar a aplicação na porta 8080 do seu localhost. Agora você pode enviar imagens codificadas em base64 para a API e receber o resultado do reconhecimento de caracteres.
 
 Com estas instruções, você será capaz de usar e rodar o projeto de reconhecimento de caracteres em captchas. Se precisar de mais informações ou tiver dúvidas, não hesite em entrar em contato.
+
+## Disclaimer
+
+Este é um modelo pré-treinado e disponibilizado para fins educacionais e de demonstração. Embora tenha sido treinado em um conjunto de dados abrangente, é importante observar que os captchas podem variar significativamente em termos de estilo, fonte e complexidade. Recomenda-se realizar o ajuste fino (fine-tuning) deste modelo em um conjunto de dados específico para resolver um tipo particular de captcha, a fim de obter os melhores resultados de reconhecimento de caracteres.
